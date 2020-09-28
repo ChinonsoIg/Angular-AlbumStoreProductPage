@@ -11,8 +11,8 @@ import { ProductTracklistingComponent } from './product-tracklisting/product-tra
 import { ProductListComponent } from './product-list/product-list.component';
 import { Routes, RouterModule } from "@angular/router";
 
-const appRoutes = Routes[
-  {path: 'products', component: ProductListComponent},
+const appRoutes: Routes = [
+  { path: 'products', component: ProductListComponent },
   {path: 'product/:id', component: ProductPageComponent},
   {path: '', redirectTo: 'products', pathMatch: 'full'}
 ];
