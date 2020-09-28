@@ -1,5 +1,10 @@
 <ul>
   <li *ngFor="let product of products">
-    {{product.albumName}}
+    <a routerLink="/product/{{product.id}}">{{product.albumName}}</a>
   </li>
 </ul>
+
+<div ng-init="myVar = 'https://www.w3schools.com'">
+  <h1>Tutorials</h1>
+  <p>Go to <a ng-href="{{myVar}}">{{myVar}}</a> to learn!</p>
+  </div>
